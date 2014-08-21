@@ -11,6 +11,23 @@
     @Scripts.Render("~/Bundles/js")
 </head>
     <body>
-        Now with Angular!
+        
+        <div ng-app="demoApp">
+            <div ng-controller="demoController">
+
+                <div>
+                    My Collection
+                </div>
+                
+                <button ng-click="actions.showMyConsoles()">Load consoles</button>
+
+                <ul>
+                    <li ng-repeat="console in consoles">
+                        {{console.id}} - {{console.name}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </body>
 </html>

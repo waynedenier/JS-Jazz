@@ -11,7 +11,9 @@ namespace JS_Jazz
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/js").Include(
-                "~/Scripts/angular.js"));
+                "~/Scripts/angular.js",
+                "~/Scripts/jquery-1.11.1.min.js",
+                "~/Scripts/app.js"));
 
             //bundles.Add(new StyleBundle("~/Content/css").Include(
             //     "~/Content/bootstrap.css",

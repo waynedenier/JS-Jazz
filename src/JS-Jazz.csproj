@@ -197,6 +197,8 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -221,7 +223,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
